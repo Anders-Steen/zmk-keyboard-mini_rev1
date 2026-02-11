@@ -1,0 +1,7 @@
+if SHIELD_MINI_REV1
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "Mini rev1"
+
+endif

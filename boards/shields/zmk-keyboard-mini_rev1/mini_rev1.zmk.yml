@@ -1,0 +1,8 @@
+file_format: "1"
+id: mini_rev1
+name: Mini Rev1
+type: shield
+url: https://github.com/Anders-Steen/zmk-keyboard-mini_rev1
+requires: [pro_micro]
+features:
+  - keys

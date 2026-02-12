@@ -20,28 +20,32 @@
             bindings = <
               &kp Q            &kp W &kp E &kp R &kp T     &kp Y     &kp U &kp I &kp O &kp P
               &kp A            &kp S &kp D &kp F &kp G     &kp H     &kp J &kp K &kp L &kp ENTER
-              &kp LSHIFT       &kp Z &kp X &kp C &kp V     &kp B     &kp N &kp M &mo 1 &mo 2
+              &kp LSHIFT       &kp Z &kp X &kp C &kp V     &kp B     &kp N &kp M &tog 1 &tog 2
               &td0 &none &none &none &kp SPACE &kp SPACE &none &none &none &none
             >;
-            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp K_VOL_DN K_VOL_UP>;
         };
 
         layer_1 { // Fn1
             bindings = <
               &kp N1 &kp N2 &kp N3 &kp N4 &kp N5 &kp N6 &kp N7 &kp N8 &kp N9 &kp N0
-              &none &none &kp BSPC &none &none &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_MENU
-              &none &none &none &none &none &none &none &none &trans &trans
-              &kp C_POWER &none &none &none &trans &trans &none &none &none &none
+              &trans &trans &kp BSPC &trans &trans &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp C_MENU
+              &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+              &kp C_POWER &trans &trans &trans &kp C_AC_BACK &kp C_MEDIA_HOME &trans &trans &trans &trans
             >;
+            sensor-bindings = <&inc_dec_kp LEFT RIGHT>;
+
         };
 
         layer_2 { // Fn2 (empty placeholder)
             bindings = <
-              &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+              &trans &kp K_MENU &trans &trans &trans &trans &trans &trans &trans &trans
               &trans &trans &kp DEL &trans &trans &trans &trans &trans &trans &trans
               &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-              &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+              &trans &trans &trans &trans &kp K_BACK &kp HOME &trans &trans &trans &trans
             >;
+            sensor-bindings = <&inc_dec_kp DOWN UP>;
+
         };
 
     };
